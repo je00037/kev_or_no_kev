@@ -9,6 +9,18 @@ body {
   max-height: 25rem;
   margin-bottom: 2rem;
   padding: 0rem 1rem 0rem 0rem;
+  animation: kevpulse 2s infinite;
+  -webkit-animation: kevpulse 2s infinite;
+}
+
+@keyframes kevpulse {
+  0%, 100% {-webkit-transform: scale(1)}
+  50% {-webkit-transform: scale(0.9)}
+}
+
+@-webkit-keyframes kevpulse {
+  0%, 100% {-webkit-transform: scale(1)}
+  50% {-webkit-transform: scale(0.9)}
 }
 
 #quoteText {
@@ -92,3 +104,4 @@ body {
   padding: 0.5rem 2rem 0.5rem 2rem;
   margin-left: 2rem;
 }
+
